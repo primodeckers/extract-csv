@@ -28,9 +28,7 @@ const fields = [{
                 }];
 
 
-const opts = { fields };
-
-const caminho = __dirname + '/arquivo.json'
+const config2 = __dirname + '/arquivo.json'
 
 try {
   

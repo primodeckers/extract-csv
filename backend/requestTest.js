@@ -24,8 +24,9 @@ request('https://www.servicos.gov.br/api/v1/servicos?campos=id%2C%20nome%2C%20po
     console.log(prop + " = " + arquivoJson.resposta[prop].orgao.id);
 
     
+    
   }
 
-  fs.writeFile(__dirname + '/arquivo.json', JSON.stringify(arquivoJson))
+  fs.writeFile(__dirname + '/arquivo.json', JSON.stringify(arquivoJson.resposta))
 });
 
