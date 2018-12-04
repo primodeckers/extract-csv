@@ -1,6 +1,11 @@
 const admin = require('./admin')
 
 module.exports = app => {
+
+    app.route('/servicos')
+    //.all(app.config.passport.authenticate())
+    .get(app.api.portalServicos.get)
+    
     app.post('/signup', app.api.user.save)
     app.post('/signin', app.api.auth.signin)
     app.post('/validateToken', app.api.auth.validateToken)
@@ -36,6 +41,5 @@ module.exports = app => {
         .all(app.config.passport.authenticate())
         .get(app.api.situacoesAvaliacao.get)
 
-    app.route('/servicos')
-        .get(app.api.portalServicos.get)
+   
 }

@@ -4,19 +4,20 @@
         <!-- <DownloadCsv /> -->
         
         <NotasCsv /> 
-        
-        <hr>
+     
         <CriteriosAvaliacoes />
-        <hr>
+       
         <Avaliacoes />
-        <hr>
+     
         <NotaCriteriosAvaliacoes />
-        <hr>
+      
         <SituacoesAvaliacao />
-        <hr>
-        <PortalServicosCsv />
-        <hr>
-        <Subimit />
+        
+           
+        <Loading />
+    
+        
+        
     </div>
     
 </template>
@@ -28,8 +29,10 @@ import NotasCsv from './NotasCsv'
 import CriteriosAvaliacoes from './CriteriosAvaliacoes'
 import NotaCriteriosAvaliacoes from './NotaCriteriosAvaliacoes'
 import SituacoesAvaliacao from './SituacoesAvaliacao'
-import PortalServicosCsv from './PortalServicosCsv'
-import Subimit from './Subimit'
+//import PortalServicosCsv from './PortalServicosCsv'
+import Loading from './Loading'
+
+
 
 
 
@@ -42,7 +45,7 @@ import Subimit from './Subimit'
 
 export default {
     name: 'Home',
-    components: { PageTitle, Subimit, Avaliacoes, NotasCsv, PortalServicosCsv, CriteriosAvaliacoes, NotaCriteriosAvaliacoes, SituacoesAvaliacao }
+    components: { PageTitle, Avaliacoes, NotasCsv, CriteriosAvaliacoes, NotaCriteriosAvaliacoes, SituacoesAvaliacao, Loading }
 
 }
 </script>

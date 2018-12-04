@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <span>Copyright <strong>Extract-csv </strong> @2018 <strong>by </strong>primodeckers</span>
+        <span>Copyright <strong>Extract-To </strong> @2018 <strong>by </strong>primodeckers</span>
     </div>
 </template>
 

@@ -16,7 +16,7 @@
   @success="val => handleSuccess(val)"
   @error="val => handleError(val)">
   <button>
-    <b>Avaliações</b>
+    <b>tb_avaliacao</b>
   </button>
 </vue-json-to-csv>
        <hr>
