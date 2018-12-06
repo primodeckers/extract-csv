@@ -3,29 +3,30 @@
     <wait-list
       :wait=0.01
       :promiseMethod="sample()">
-      <p slot="loading">Aguarde o carregamento da tb_servicos 
+      <p slot="loading">Aguarde o carregamento da <b>tb_servicos </b>
           <img src="@/assets/loading.gif" alt="Loading">
       </p>
       <div slot="loaded">
         
            <vue-json-to-csv :jsonData="servicos"
            :labels="{
-            idServico: { title: 'id_servico' },
             nome: { title: 'nome' },
-            idOrgao: { title: 'id_orgao'},
-            nomeOrgao: { title: 'nome_orgao'},
-            porcentagemDigital: { title: 'porcentagem_digital' },
-            servicoDigital: { title: 'servico_digital' },
-            orgao: { id: 'fl_avaliacao_anonima' },
-            dt_nota: { title: 'dt_nota' }
+            porcentagemDigital: {title: 'porcentagem_digital'},
+            servicoDigital: {title: 'servico_digital'},
+            idServico: {title: 'id_servico' },
+            idOrgao: {title: 'id_orgao'},
+            nomeOrgao: {title: 'nome_orgao'},           
+            avaliacoesPositivas: {title: 'avaliacoes_positivas'},
+            avaliacoesNegativas: {title: 'avaliacoes_negativas'}
 
             }"
+            csv-title='tb_servicos'
             separator=';'
-            @success="val => handleSuccess(val)"
-            @error="val => handleError(val)">
+            @update:success="val => handleSuccess(val)"
+            @update:error="val => handleError(val)">
 
-            <button >
-                <b>tb_servicos</b>    
+            <button class="fa fa-file-excel-o">
+                <b>  tb_servicos</b>    
             </button>
   
         </vue-json-to-csv>

@@ -9,13 +9,11 @@ import store from './config/store'
 import router from './config/router'
 
 Vue.config.productionTip = false
-import VuePromiseBtn from 'vue-promise-btn'
-
-Vue.use(VuePromiseBtn)
 
 
 
-//require('axios').defaults.headers.common['Authorization'] = 'bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6IlJlbmUgRGVja2VycyIsImVtYWlsIjoicHJpbW9kZWNrZXJzQGhvdG1haWwuY29tIiwiYWRtaW4iOnRydWUsImlhdCI6MTU0Mzg1OTQ3MCwiZXhwIjoxNTQ0MTE4NjcwfQ.pekVXgKZ8TzBm4m7BvdlrYch_ByDvFCGNhkIRWlPtSA'
+
+require('axios').defaults.headers.common['Authorization'] = 'bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtZSI6IlJlbmUgRGVja2VycyIsImVtYWlsIjoicHJpbW9kZWNrZXJzQGhvdG1haWwuY29tIiwiYWRtaW4iOnRydWUsImlhdCI6MTU0NDExODc3NSwiZXhwIjoxNTQ0Mzc3OTc1fQ.0Lco2ST4tCM7nQmyIQUcm04bWxMTSvQpZ5OwfO33CNY'
 
 
 new Vue({
@@ -23,4 +21,7 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+
+
+
 

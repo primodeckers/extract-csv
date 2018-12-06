@@ -6,11 +6,12 @@
     ds_criterio: { title: 'ds_criterio' },
     fl_permite_observacao: { title: 'fl_permite_observacao' }
   }"
-  separator=';'
-  @success="val => handleSuccess(val)"
-  @error="val => handleError(val)">
-  <button>
-    <b>tb_criterio_avaliacao</b>
+    csv-title='tb_criterio_avaliacao'
+    separator=';'
+    @update:success="val => handleSuccess(val)"
+    @update:error="val => handleError(val)">
+  <button class="fa fa-file-excel-o">
+    <b>  tb_criterio_avaliacao</b>
   </button>
 </vue-json-to-csv>
        <hr>

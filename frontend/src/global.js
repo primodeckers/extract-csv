@@ -1,5 +1,5 @@
 import Vue from 'vue'
-export const userKey = '__Extreac_To_user'
+export const userKey = '__Parse_To_user'
 
 export const baseApiUrl = 'http://localhost:3000'
 export const baseApiPortalServicos = 'https://www.servicos.gov.br/api/v1/servicos?campos=id%2C%20nome%2C%20porcentagemDigital%2C%20servicoDigital%2C%20avaliacoes%2C%20orgao'

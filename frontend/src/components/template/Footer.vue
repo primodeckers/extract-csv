@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <span>Copyright <strong>Extract-To </strong> @2018 <strong>by </strong>primodeckers</span>
+        <span>Copyright <strong><i>Parse CSV</i></strong> @2018 <strong>by </strong>primodeckers</span>
     </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
 <style>
     .footer {
         grid-area: footer;
-        background:  linear-gradient(to right, #1e469a, #49a7c1);
+        background:  linear-gradient(to right, #98FB98, #9ACD32);
         color: #333;
 
         display: flex;

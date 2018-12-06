@@ -5,11 +5,12 @@
     co_situacao: { title: 'co_situacao' },
     ds_situacao: { title: 'ds_situacao' }
    }"
-  separator=';'
-  @success="val => handleSuccess(val)"
-  @error="val => handleError(val)">
-  <button>
-    <b>tb_situacao_servico</b>
+    csv-title='tb_situacao_servico'
+    separator=';'
+    @update:success="val => handleSuccess(val)"
+    @update:error="val => handleError(val)">
+  <button class="fa fa-file-excel-o">
+    <b>  tb_situacao_servico</b>
   </button>
 </vue-json-to-csv>
        <hr>

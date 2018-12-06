@@ -1,19 +1,12 @@
 <template>
     <div class="home">
-        <PageTitle icon="fa fa-home" main="Arquivos" sub="Extract" />
-        <!-- <DownloadCsv /> -->
-        
-        <NotasCsv /> 
-     
-        <CriteriosAvaliacoes />
-       
-        <Avaliacoes />
-     
-        <NotaCriteriosAvaliacoes />
-      
-        <SituacoesAvaliacao />
-        
-           
+        <PageTitle icon="fa fa-file-excel-o" main=" Parses" />
+        <!-- <DownloadCsv /> -->        
+        <NotasCsv />     
+        <CriteriosAvaliacoes />       
+        <Avaliacoes />     
+        <NotaCriteriosAvaliacoes />      
+        <SituacoesAvaliacao />           
         <Loading />
     
         
@@ -29,7 +22,6 @@ import NotasCsv from './NotasCsv'
 import CriteriosAvaliacoes from './CriteriosAvaliacoes'
 import NotaCriteriosAvaliacoes from './NotaCriteriosAvaliacoes'
 import SituacoesAvaliacao from './SituacoesAvaliacao'
-//import PortalServicosCsv from './PortalServicosCsv'
 import Loading from './Loading'
 
 

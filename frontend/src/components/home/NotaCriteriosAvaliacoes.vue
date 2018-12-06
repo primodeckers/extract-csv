@@ -5,11 +5,12 @@
     id_nota: { title: 'id_nota' },
     co_criterio: { title: 'co_criterio' }
   }"
-  separator=';'
-  @success="val => handleSuccess(val)"
-  @error="val => handleError(val)">
-  <button>
-    <b>tb_nota_criterio_avaliacao</b>
+    csv-title='tb_nota_criterio_avaliacao'
+    separator=';'
+    @update:success="val => handleSuccess(val)"
+    @update:error="val => handleError(val)">
+  <button class="fa fa-file-excel-o">
+    <b>  tb_nota_criterio_avaliacao</b>
   </button>
 </vue-json-to-csv>
        <hr>

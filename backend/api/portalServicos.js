@@ -53,13 +53,9 @@ const get =  async (req, res) => {
    
 
     }
+    res.json(arquivoJson.resposta)
     
-    try {
-      res.json(arquivoJson.resposta)
-    } catch (err) {
-      res.status(500).send("Oh uh, something went wrong" + err);
-    }
-   })
+  })
 
 }
 

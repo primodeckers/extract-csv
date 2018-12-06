@@ -10,11 +10,12 @@
     dt_nota: { title: 'dt_nota' },
 
   }"
-  separator=';'
-  @success="val => handleSuccess(val)"
-  @error="val => handleError(val)">
-  <button>
-    <b>tb_notas</b>
+    csv-title='tb_nota'
+    separator=';'
+    @update:success="val => handleSuccess(val)"
+    @update:error="val => handleError(val)">
+  <button class="fa fa-file-excel-o">
+    <b>  tb_nota</b>
   </button>
 </vue-json-to-csv>
        <hr>
