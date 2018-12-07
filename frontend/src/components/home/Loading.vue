@@ -6,19 +6,17 @@
       <p slot="loading">Aguarde o carregamento da <b>tb_servicos </b>
           <img src="@/assets/loading.gif" alt="Loading">
       </p>
-      <div slot="loaded">
-        
+      <div slot="loaded">        
            <vue-json-to-csv :jsonData="servicos"
            :labels="{
-            nome: { title: 'nome' },
-            porcentagemDigital: {title: 'porcentagem_digital'},
-            servicoDigital: {title: 'servico_digital'},
+            avaliacoesPositivas: {title: 'avaliacoes_positivas' },
+            avaliacoesNegativas: {title: 'avaliacoes_negativas' },
+            idOrgao: {title: 'id_orgao' },
             idServico: {title: 'id_servico' },
-            idOrgao: {title: 'id_orgao'},
-            nomeOrgao: {title: 'nome_orgao'},           
-            avaliacoesPositivas: {title: 'avaliacoes_positivas'},
-            avaliacoesNegativas: {title: 'avaliacoes_negativas'}
-
+            nomeOrgao: {title: 'nome_orgao' },
+            nomeServico: { title: 'nome' },
+            porcentagemDigital: {title: 'porcentagem_digital' },
+            servicoDigital: {title: 'servico_digital' }
             }"
             csv-title='tb_servicos'
             separator=';'
@@ -52,8 +50,8 @@ export default {
   components: { WaitList, WaitImg, VueJsonToCsv },
   data() {
     return {
-        servicos: [],
-        };
+          servicos: []
+        }
   },
   methods: {
     sample() {       
@@ -64,21 +62,30 @@ export default {
                 this.servicos = res.data
              })
           resolve(data)
-        }, 30000);
+        }, 3000);
       }).then(response => {
         this.data = response;
       
 
       });
     },
+
     loadServicos() {
                 const url = `${baseApiUrl}/servicos`                
                 axios.get(url).then(res => {
                 this.servicos = res.data
                             
             })
+        },
+    loadServico(servico, mode = 'history') {
+            this.mode = mode
+            this.servico = { ...servico }
         }
-  }
+      },
+      mounted() {
+        this.loadServicos()
+        this.sample()
+    }
 };
 
 </script> 

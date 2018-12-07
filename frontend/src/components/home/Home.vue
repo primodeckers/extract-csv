@@ -1,7 +1,6 @@
 <template>
     <div class="home">
         <PageTitle icon="fa fa-file-excel-o" main=" Parses" />
-        <!-- <DownloadCsv /> -->        
         <NotasCsv />     
         <CriteriosAvaliacoes />       
         <Avaliacoes />     
@@ -23,17 +22,6 @@ import CriteriosAvaliacoes from './CriteriosAvaliacoes'
 import NotaCriteriosAvaliacoes from './NotaCriteriosAvaliacoes'
 import SituacoesAvaliacao from './SituacoesAvaliacao'
 import Loading from './Loading'
-
-
-
-
-
-
-
-//import axios from 'axios'
-//import { baseApiUrl } from '@/global'
-
-
 
 export default {
     name: 'Home',
