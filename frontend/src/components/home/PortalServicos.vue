@@ -46,7 +46,7 @@
 
  
 export default {
-   name: 'Loading',
+   name: 'PortalServicos',
   components: { WaitList, WaitImg, VueJsonToCsv },
   data() {
     return {

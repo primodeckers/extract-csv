@@ -6,7 +6,7 @@
         <Avaliacoes />     
         <NotaCriteriosAvaliacoes />      
         <SituacoesAvaliacao />           
-        <Loading />
+        <PortalServicos />
     
         
         
@@ -21,11 +21,11 @@ import NotasCsv from './NotasCsv'
 import CriteriosAvaliacoes from './CriteriosAvaliacoes'
 import NotaCriteriosAvaliacoes from './NotaCriteriosAvaliacoes'
 import SituacoesAvaliacao from './SituacoesAvaliacao'
-import Loading from './Loading'
+import PortalServicos from './PortalServicos'
 
 export default {
     name: 'Home',
-    components: { PageTitle, Avaliacoes, NotasCsv, CriteriosAvaliacoes, NotaCriteriosAvaliacoes, SituacoesAvaliacao, Loading }
+    components: { PageTitle, Avaliacoes, NotasCsv, CriteriosAvaliacoes, NotaCriteriosAvaliacoes, SituacoesAvaliacao, PortalServicos }
 
 }
 </script>
