@@ -1,6 +1,6 @@
 <template>
     <div class="admin-pages">
-        <PageTitle icon="fa fa-cogs" main="Administração do Sistema" sub="Arquivos csv"></PageTitle>
+        <PageTitle icon="fa fa-cogs" main="Administração do sistema"></PageTitle>
         <div class="admin-pages-tabs">
             <b-card no-body>
                 <b-tabs card>
