@@ -22,8 +22,24 @@ module.exports = app => {
         .delete(admin(app.api.user.remove))
 
     app.route('/avaliacoes')
-        .all(app.config.passport.authenticate())
+        //.all(app.config.passport.authenticate())
         .get(app.api.avaliacao.get)
+  
+
+    app.route('/getAvaliacoes')
+        .get(app.api.avaliacao2.getAvaliacoes)
+        
+        
+    app.route('/getAvaliacoes/:name')
+        .get(app.api.avaliacao2.getFile)
+        .post(app.api.avaliacao2.getFile)
+    
+   
+         
+         
+
+
+         
     
     app.route('/criteriosAvaliacoes')
         .all(app.config.passport.authenticate())
@@ -37,7 +53,7 @@ module.exports = app => {
         .all(app.config.passport.authenticate())
         .get(app.api.notasCriteriosAvaliacoes.get)
     
-    app.route('/situacoesAvaliacao')
+    app.route('/situacoes')
         .all(app.config.passport.authenticate())
         .get(app.api.situacoesAvaliacao.get)
 

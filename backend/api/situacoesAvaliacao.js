@@ -1,6 +1,6 @@
 module.exports = app => {
 
-    const get = (req, res) => {
+    const get = async (req, res) => {
         app.db('avaliacao.tb_situacao_avaliacao')
             .select('co_situacao', 'ds_situacao')
             .then(situacoesAvaliacao => res.json(situacoesAvaliacao))

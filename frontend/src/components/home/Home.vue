@@ -1,12 +1,24 @@
 <template>
     <div class="home">
         <PageTitle icon="fa fa-file-excel-o" main=" Parses" />
-        <NotasCsv />     
+        
         <CriteriosAvaliacoes />       
-        <Avaliacoes />     
+           
         <NotaCriteriosAvaliacoes />      
         <SituacoesAvaliacao />           
+          
+        
+        <hr>
+        <NotasCsv />
+        <hr>
+        <SituacoesAvaliacao />
+        <hr>
         <PortalServicos />
+        <hr>
+        <Avaliacao2 /> 
+        
+        <hr>
+        
     
         
         
@@ -16,16 +28,17 @@
 
 <script>
 import PageTitle from '../template/PageTitle'
-import Avaliacoes from './Avaliacoes'
 import NotasCsv from './NotasCsv'
 import CriteriosAvaliacoes from './CriteriosAvaliacoes'
 import NotaCriteriosAvaliacoes from './NotaCriteriosAvaliacoes'
 import SituacoesAvaliacao from './SituacoesAvaliacao'
 import PortalServicos from './PortalServicos'
+import Avaliacao2 from './Avaliacao2'
+
 
 export default {
     name: 'Home',
-    components: { PageTitle, Avaliacoes, NotasCsv, CriteriosAvaliacoes, NotaCriteriosAvaliacoes, SituacoesAvaliacao, PortalServicos }
+    components: { PageTitle, NotasCsv, CriteriosAvaliacoes, NotaCriteriosAvaliacoes, SituacoesAvaliacao, PortalServicos, Avaliacao2 }
 
 }
 </script>
