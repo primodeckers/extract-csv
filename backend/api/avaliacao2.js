@@ -12,7 +12,6 @@ const pool = new Pool({
   port: 5432
 });
 
-
 module.exports = app => {
   const getAvaliacoes = (req, res, next) => {
     var fileName = "tb_avaliacao.csv";
@@ -20,25 +19,18 @@ module.exports = app => {
       var stream = client.query(
         copyTo("COPY avaliacao.tb_avaliacao TO STDOUT CSV HEADER DELIMITER ';'")
       );
-      
+
       toString(stream.pipe(fs.createWriteStream(fileName)));
-      console.log('passei por aqui primeiro');
-      
+      console.log("passei por aqui primeiro");
+
       stream.on("end", done);
       stream.on("error", done);
-      
-      
-      
     });
-
-    
-   
-    
   };
 
   const getFile = (req, res, next) => {
     var fileName = req.params.name;
-      const options = {
+    const options = {
       root: "/home/primodeckers/reposirory/extract-csv/backend/",
       dotfiles: "ignore",
       headers: {
@@ -46,8 +38,8 @@ module.exports = app => {
         "x-sent": true
       }
     };
-    
-    res.sendFile(fileName, options, (err) => {
+
+    res.sendFile(fileName, options, err => {
       if (err) {
         next(err);
       } else {

@@ -1,10 +1,9 @@
 <template>
-<div>
-   <button @click.prevent="copyAvaliacoes();downloadItem()" class="fa fa-file-excel-o">
-    <b> tb_avaliacao</b>
-  </button>
-
-</div>
+  <div>
+    <button @click.prevent="copyAvaliacoes();downloadItem()" class="fa fa-file-excel-o">
+      <b>tb_avaliacao</b>
+    </button>
+  </div>
 </template>
 
 
@@ -16,13 +15,13 @@ export default {
   name: "Avaliacao2",
 
   methods: {
-
     copyAvaliacoes() {
       const url = `${baseApiUrl}/getAvaliacoes/`;
-      axios.get(url)},
+      axios.get(url);
+    },
 
     downloadItem() {
-       axios
+      axios
         .post(
           "http://localhost:3000/getAvaliacoes/tb_avaliacao.csv",
           {},
@@ -36,11 +35,7 @@ export default {
           link.click();
         });
     }
-
-
-
   }
- 
 };
 </script>
 
