@@ -8,7 +8,6 @@ module.exports = app => {
             console.log(avaliacao);
             
     }
-
     return { get }
 }
 
