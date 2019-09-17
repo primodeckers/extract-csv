@@ -9,6 +9,8 @@ module.exports = app => {
             
     }
     return { get }
+    console.log("novo push");
+    
 }
 
 
